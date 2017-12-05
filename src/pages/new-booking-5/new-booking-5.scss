@@ -1,0 +1,13 @@
+page-new-booking-5 {
+    & section.steps-container{
+        height: 130px;
+    }
+    & .summary-text{
+        background: transparent;
+        border: 0 !important;
+    }
+
+    & .item-md.item-block .item-inner{
+        border: 0 !important;   
+    }
+}

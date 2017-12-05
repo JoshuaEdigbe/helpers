@@ -1,0 +1,18 @@
+page-new-booking-4 {
+    .fix-container-bottom{
+        & ion-item{
+            height: 130px;
+
+            & ion-label{
+                position: absolute;
+                top: 2px;
+                font-size: 14px;
+            }
+
+            & ion-textarea{
+                margin-top: 40px;
+                margin-left: 0px;
+            }
+        }
+    }
+}

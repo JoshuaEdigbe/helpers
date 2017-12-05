@@ -1,0 +1,12 @@
+page-confirm-transaction {
+    & .ts-message{
+        ion-icon{
+            font-size: 78px;
+            margin-bottom: 44px;
+
+            & > div{
+                padding: 30px;
+            }
+        }
+    }
+}

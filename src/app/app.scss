@@ -1,0 +1,248 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.fix-container-bottom{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    & .item:last-child,button{
+        margin-bottom: 0px !important;
+    }
+}
+
+.steps-container{
+    position: relative;
+    height: 250px
+}
+
+ul.steps-indicator{
+    margin: 0;
+    padding: 0;
+}
+
+.steps{
+    border-radius: 100%;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #000;
+    opacity: .2;
+    pointer-events: auto;
+    margin: 0 5px;
+}
+
+.steps.active{
+    background: #fff;
+    opacity: 1;
+}
+
+.select-text{
+    color: #dadada;
+}
+
+.blur-white-text{
+    color: #b1a9a9;
+}
+
+.select-wp{
+    border: 2px solid rgba(226, 226, 226, 0.5);
+}
+
+ion-slides {
+    & .swiper-pagination-bullet-active{
+        background-color: #ffffff;
+    }
+}
+
+[icon-only]{
+    background-color: transparent;
+    box-shadow: none;
+}
+  
+  .tp-header{
+    &.header-md::after{
+        background-image: none;
+    }
+  
+    & .back-button{
+        color: #ffffff !important;
+    }
+  
+    & .toolbar-background-md,
+    .toolbar-background-wp,
+    .toolbar-background-ios{
+        background: transparent;
+    }
+  
+    & .toolbar-ios .toolbar-background-ios{
+        border-bottom: 0;
+        border-width: 0;
+    }
+  }
+  .tp-content{
+    background-color: #2e2e3d !important;
+    color: #ffffff !important;
+  
+    & ion-list{
+      margin-bottom: 0px !important;
+      & item::first-child{
+          margin-bottom: 4px;
+      }
+  
+      & .item:last-child{
+          border-bottom: 0;
+      }
+  
+      & .item-inner{
+          border: 0 !important;
+      }
+  
+      & .item-block:first-child{
+          border-top: 0;
+      }
+  
+      & .text-input{
+          border: 0;
+          color: #fff;
+      }
+      
+      & .item{
+          background-color: #3e3e52;
+      }
+  
+      & ion-label{
+          color: #fff;
+      }
+      & .label-md[stacked], .label-md[floating]{
+          color: #e8e8e8;
+      }
+      & button{
+          margin: 0;
+      }
+    }
+  }
+  
+  .label-ios[floating]{
+      color: #ababab;
+  }
+  
+  .item{
+      margin-bottom: 4px !important;
+  }
+  .toolbar-title, .bar-button{
+      color: #fff !important;
+  }
+  
+  .menu-inner{
+      & .header-ios .toolbar-ios:last-child .toolbar-background-ios {
+          border-width: 0;
+      }
+  
+      & .toolbar-title{
+          text-align: center;
+          font-size: 1.5rem;
+      }
+  
+      & .toolbar-background-ios, .toolbar-background-md, .toolbar-background-wp{
+        background: transparent;
+  
+       
+      }
+  
+      & .header-md::after{
+          background-image: none;
+      }
+  
+      & .scroll-content{
+          margin-top: 83px;
+  
+          & ion-list{
+              position: absolute;
+              top: 40%;
+              left: 50%;
+              margin-right: -50%;
+              transform: translate(-50%, -50%);
+              width: 100%;
+  
+              & .item{
+                  margin-bottom: 1px !important;
+  
+                  & .input-wrapper{
+                      margin: 10px 0px;
+                  }
+              }
+  
+              [icon-left] ion-icon{
+                  font-size: 1em;
+                  padding-right: 1.1em;
+              }
+              & ion-label{
+                color: #d3d3d3;
+              }
+          }
+      }
+  
+      .ex-item-container{
+          & .item{
+              margin-bottom: -1px !important;
+              background-color: #3e3e52;
+              color: #d3d3d3;
+  
+              & .input-wrapper{
+                  margin: 10px 0px;
+              }
+          }
+  
+          & .item:last-child{
+              color: #eb3254
+          }
+  
+          [icon-left] ion-icon{
+              font-size: 1em;
+              padding-right: 1.1em;
+          }
+      }
+  }
+
+  .cs-item--container{
+    background-color: #3e3e52;
+    padding: 5px;
+    margin-bottom: 5px;
+
+    & .title{
+        margin: 0;
+        margin-bottom: 8px;
+    }
+
+    & .item-text{
+        color: #dadada;
+    }
+  }
+
+  .center-parent{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  ion-datetime{
+      color: #fff;
+  }

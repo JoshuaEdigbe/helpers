@@ -1,0 +1,24 @@
+page-help {
+    & section.search{
+        margin-bottom: 20px;
+
+        & .searchbar-md,.searchbar-wp{
+            padding: 0;
+    
+            & .searchbar-input{
+                background: transparent;
+                box-shadow: none;
+                background-color: #3e3e52;
+                color: #dadada;
+            }
+        }
+    
+        & .searchbar-wp .searchbar-input-container {
+            border: 2px solid rgba(132, 127, 127, 0.5);
+        }
+    }
+
+    & .item{
+        margin-bottom: 2px !important;
+    }
+}

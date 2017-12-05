@@ -1,0 +1,25 @@
+page-landing{
+    & ion-content{
+        background-image: url('../assets/img/helpers-1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #ffffff !important;
+
+        & ion-slides {
+            position: absolute;
+            height: 300px;
+            bottom: 160px;
+        }
+    }
+
+    & .scroll-content{
+        padding: 0 !important;
+    }
+
+    & .landing--actions-container{
+        & button:last-child{
+            margin-bottom: 0;
+            color: #ffffff;
+        }
+    }
+}

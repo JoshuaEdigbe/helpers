@@ -1,0 +1,32 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Joshua Edigbe</ion-title>
+      <ion-buttons end>
+        <button menuClose ion-button icon-only (click)="openSettigs()">
+          <ion-icon name="settings"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+    
+  </ion-header>
+
+  <ion-content class="tp-content">
+    <ion-list>
+      <button menuClose ion-item icon-left *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+    <div class="fix-container-bottom ex-item-container">
+      <button menuClose ion-item icon-left (click)="OpenNewBooking()">
+        New Booking
+      </button>
+      <button menuClose ion-item icon-left (click)="openLandingPage()">
+        Log Out
+      </button>
+    </div>
+  </ion-content>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

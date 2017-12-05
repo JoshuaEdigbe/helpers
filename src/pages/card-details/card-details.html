@@ -1,0 +1,68 @@
+<!--
+  Generated template for the BalancePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="tp-header">
+  <ion-navbar>
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>Card Details</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+          <ion-icon name="create"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="tp-content">
+  <div class="cs-item--container">
+    <ion-row>
+      <ion-col col-9>
+        <h6 class="title">Card Number</h6>
+        <div class="card-number">
+          <span>56784265355373664</span>
+        </div>
+      </ion-col>
+      <ion-col col-3 text-right>
+        <span class="center-parent" text-center>
+          <ion-icon name="card"></ion-icon>
+        </span>
+      </ion-col>
+    </ion-row>
+  </div>
+  <ion-row>
+    <div class="custom-cont">
+      <div class="sub-cont-1">
+        <ion-row>
+          <h6 class="title">Expiry</h6>
+        </ion-row>
+        <ion-row>
+          <span class="">07 / 05</span>
+        </ion-row>
+      </div>
+      <div class="sub-cont-2">
+        <ion-row>
+          <h6 class="title">CVV</h6>
+        </ion-row>
+        <ion-row>
+          <span class="">***</span>
+        </ion-row>
+      </div>
+    </div>
+  </ion-row>
+  <ion-row>
+    <ion-col offset-3>
+      <button ion-button round center>Update Card</button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col offset-3>
+      <button ion-button round outline center>Delete Card</button>
+    </ion-col>
+  </ion-row>
+</ion-content>

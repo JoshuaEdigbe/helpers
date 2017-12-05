@@ -1,0 +1,30 @@
+page-card-details {
+    & .title{
+        font-size: 14px;
+        margin-top: 2px;
+        color: #b3b3b3;
+    }
+
+    & .custom-cont{
+        display: flex;
+        width: 100%;
+        height: 70px;
+
+        & > div{
+            flex: 1;
+            height: 100%;
+            background-color: #3e3e52;
+            padding: 10px;
+        }
+
+        & .sub-cont-1{
+            margin-right: 2px;
+        }
+
+        & .sub-cont-2{
+            margin-left: 2px;
+        }
+    }
+
+
+}

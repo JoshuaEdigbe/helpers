@@ -1,0 +1,60 @@
+<ion-header class="tp-header">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Dashboard</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openNewBooking()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="tp-content">
+  <div class="cs-item--container">
+    <ion-row>
+      <ion-col col-9>
+        <h6 class="title">$2,000</h6>
+        <div class="item-text">
+          <span>4 Rooms</span> - <span>2 Toilet</span> - <span>1 Window </span>
+        </div>
+      </ion-col>
+      <ion-col col-3 text-right>
+        <span class="center-parent">3 days</span>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="cs-item--container">
+    <ion-row>
+      <ion-col col-9>
+        <h6 class="title">$2,000</h6>
+        <div class="item-text">
+          <span>4 Rooms</span> - <span>2 Toilet</span> - <span>1 Window </span>
+        </div>
+      </ion-col>
+      <ion-col col-3 text-right>
+        <span class="center-parent">3 days</span>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="cs-item--container">
+    <ion-row>
+      <ion-col col-9>
+        <h6 class="title">$2,000</h6>
+        <div class="item-text">
+          <span>4 Rooms</span> - <span>2 Toilet</span> - <span>1 Window </span> - <span>1 Window </span>
+        </div>
+      </ion-col>
+      <ion-col col-3 text-right>
+        <span class="center-parent">3 days</span>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="fix-container-bottom landing--actions-container">
+    <button ion-button full (click)="openNewBooking()">
+        New Booking
+    </button>
+  </div>
+</ion-content>
